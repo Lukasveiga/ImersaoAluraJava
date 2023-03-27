@@ -37,7 +37,7 @@ public class App {
 
         String value;
 
-        try (InputStream input = new FileInputStream("src/main/resources/api-properties.properties")) {
+        try (InputStream input = new FileInputStream("src/main/resources/aplication-properties.properties")) {
 
             Properties prop = new Properties();
             // load a properties file
