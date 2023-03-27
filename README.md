@@ -8,7 +8,8 @@
  Resultado:
  
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/resultados/dia1.png"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/resultados/dia1_filmes.png" width="300" height="300"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/resultados/dia1_tvs.png" width="300" height="300"/>
 </p>
  
  - [ ] Dia 2:
