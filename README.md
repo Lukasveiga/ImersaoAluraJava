@@ -21,17 +21,17 @@
 Resultado (Filmes):
 
 <p align="center">
-  <img src="saida/imdb/Platoon.png" width="150" height="200"/>
-  <img src="saida/imdb/Terminator_2:_Judgment_Day.png" width="150" height="200"/>
-  <img src="saida/imdb/The_Shawshank_Redemption.png" width="150" height="200"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/saida/imdb/Platoon.png" width="150" height="200"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/saida/imdb/Terminator_2%3A_Judgment_Day.png" width="150" height="200"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/saida/imdb/The_Shawshank_Redemption.png" width="150" height="200"/>
 </p>
 
 Resultado (Tv's Shows):
 
 <p align="center">
-  <img src="saida/imdb/Stranger_Things.png" width="200" height="250"/>
-  <img src="saida/imdb/The_Boys.png" width="200" height="250"/>
-  <img src="saida/imdb/The_Terminal_List.png" width="200" height="250"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/saida/imdb/Stranger_Things.png" width="200" height="250"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/saida/imdb/The_Boys.png" width="200" height="250"/>
+  <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/saida/imdb/The_Terminal_List.png" width="200" height="250"/>
 </p>
 
 - [ ] Dia 3:
