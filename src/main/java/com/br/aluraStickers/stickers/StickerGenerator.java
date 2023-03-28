@@ -24,12 +24,12 @@ public class StickerGenerator {
         int width = image.getWidth();
         int height = (int) (image.getHeight() * 1.1);
 
-        BufferedImage newImage = new BufferedImage((int) width, (int) height, BufferedImage.TRANSLUCENT);
+        BufferedImage newImage = new BufferedImage(width, height, BufferedImage.TRANSLUCENT);
 
         Graphics2D graphics = (Graphics2D) newImage.getGraphics();
         graphics.drawImage(image, 0, 0, null);
 
-        var font = new Font(Font.SANS_SERIF, Font.BOLD, (int) (width / 8)); // --> Best proportion between figure width and font size of text;
+        var font = new Font(Font.SANS_SERIF, Font.BOLD, (width / 8)); // --> Best proportion between figure width and font size of text;
         graphics.setColor(Color.red);
         graphics.setFont(font);
 
