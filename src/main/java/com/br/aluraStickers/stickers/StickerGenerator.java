@@ -2,6 +2,7 @@ package com.br.aluraStickers.stickers;
 
 import com.br.aluraStickers.model.Model;
 import com.br.aluraStickers.model.imdb.ModelIMDB;
+import com.br.aluraStickers.model.nasa.ModelNASA;
 import org.jetbrains.annotations.NotNull;
 
 import javax.imageio.ImageIO;
@@ -29,13 +30,12 @@ public class StickerGenerator {
         Graphics2D graphics = (Graphics2D) newImage.getGraphics();
         graphics.drawImage(image, 0, 0, null);
 
-        var font = new Font(Font.SANS_SERIF, Font.BOLD, (width / 8)); // --> Best proportion between figure width and font size of text;
+        var font = new Font(Font.SANS_SERIF, Font.BOLD, (width / 20)); // --> Best proportion between figure width and font size of text;
         graphics.setColor(Color.red);
         graphics.setFont(font);
 
         FontMetrics fm = graphics.getFontMetrics();
         int x = (width - fm.stringWidth(text)) / 2;
-
         graphics.drawString(text, x, (int) (height * 0.985));
 
         // Drawing outline
@@ -47,12 +47,15 @@ public class StickerGenerator {
         graphics.setStroke(new BasicStroke((int) (width / 216))); // --> Best proportion between figure width and thickness of outline;
         graphics.draw(shape);
 
+
         File directory = new File("saida/" + folder);
         if (!directory.exists()) {
             directory.mkdir();
         }
 
-        ImageIO.write(newImage, "png", new File("saida/" + folder + "/" + model.title().replace(" ", "_") + ".png"));
+        ImageIO.write(newImage, "png", new File("saida/" + folder + "/"
+                                                        + model.title().replace(" ", "_")
+                .replace(":", "") + ".png"));
 
     }
 
@@ -72,5 +75,11 @@ public class StickerGenerator {
         }
 
         createSticker(model, classificacao, "imdb");
+    }
+
+    public static void createStickerNASA(ModelNASA model) throws IOException {
+
+        createSticker(model, model.title(), "nasa");
+
     }
 }

@@ -34,7 +34,26 @@ Resultado (Tv's Shows):
   <img src="https://raw.githubusercontent.com/Lukasveiga/ImersaoAluraJava/main/saida/imdb/The_Terminal_List.png" width="200" height="250"/>
 </p>
 
-- [ ] Dia 3:
+- [x] Dia 3:
+
+* O código foi refatorado com o objetivo de simplificar e ampliar a utilidade da aplicação utilizando os pilares da programação orientada a objetos como o polimorfismo.
+* Para isso foram implementadas ferramentas do Java como as `Interfaces`, `Record's` e os `Generics`.  
+* No fluxo da aplicação temos a classe `App` que requisita a url da API por meio de uma chave String para a classe `ApiProperties`; com a url em mãos é possível solicitar a interface `Model` a lista de conteúdos, onde é feito a requisição do JSON a classe `ClientHttp` e a própria interface realiza a desserialização e retorna uma lista de conteúdos. Por fim, a classe `App` utiliza os métodos da classe `StickGenerator` passando o conteúdo e que retorna a figurinha com a menssagem desejada.
+
+<p align="center">
+  <img src="resultados/fluxo.png" alt="Fluxo Aplicação">
+</p>
+
+* Dessa forma foi possível flexibilizar e reutilizar o código na geração de figurinhas de API's diferentes das que foram utilizadas nos dias anteriores. Como exemplo a [API da Nasa](https://github.com/nasa/apod-api) que fornece diferentes imagens relacionadas a astronomia.
+
+Resultado:
+
+<p align="center">
+  <img src="saida/nasa/The_Horsehead_Nebula.png" width="400" height="250"/>
+  <img src="saida/nasa/Thunder_Moon_over_Pisa.png" width="400" height="250"/>
+</p>
+
+- [ ] Dia 4:
 
   *******
  **Caminho do repositório:**

@@ -8,7 +8,7 @@ public record ModelIMDB(String rank, String title, String year, String image, do
     @Override
     public String toString() {
         return """
-                Rank:  %s
+                Rank:  %s                                                                                                           
                 Year:  %s
                 Title: %s
                 IMDB Rating: %s
