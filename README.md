@@ -61,9 +61,9 @@ Resultado:
 Resultados:
 
 <p align="center">
-  <img src="saida/lang/Java.png" alt="Fluxo Aplicação" width="200" height="300">
-  <img src="saida/lang/SQL.png" alt="Fluxo Aplicação" width="200" height="250">
-  <img src="saida/lang/Python.png" alt="Fluxo Aplicação" width="200" height="250">
+  <img src="https://github.com/Lukasveiga/ImersaoAluraJava/blob/main/saida/lang/Java.png?raw=true" alt="Fluxo Aplicação" width="200" height="300">
+  <img src="https://github.com/Lukasveiga/ImersaoAluraJava/blob/main/saida/lang/SQL.png?raw=true" alt="Fluxo Aplicação" width="200" height="250">
+  <img src="https://github.com/Lukasveiga/ImersaoAluraJava/blob/main/saida/lang/Python.png?raw=true" alt="Fluxo Aplicação" width="200" height="250">
 </p>
 
   *******
