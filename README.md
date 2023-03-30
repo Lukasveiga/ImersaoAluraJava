@@ -58,7 +58,7 @@ Resultado:
 * Nas atividades do quarto dia foi desenvolvida uma API com `Spring Boot` e `MongoDB` contendo logos de linguagens de programação, podendo ser acessada no repositório [Imersão Alura Java_: API de Langs](https://github.com/Lukasveiga/ImersaoAluraLangApi).
 * E por fim foram geradas figurinhas com as imagens extraídas da API seguindo o mesmo modelo dos exemplos anteriores.
 
-Resultados:
+Resultado:
 
 <p align="center">
   <img src="https://github.com/Lukasveiga/ImersaoAluraJava/blob/main/saida/lang/Java.png?raw=true" alt="Fluxo Aplicação" width="200" height="300">
