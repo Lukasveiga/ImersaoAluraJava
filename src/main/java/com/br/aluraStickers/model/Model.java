@@ -3,6 +3,7 @@ package com.br.aluraStickers.model;
 import com.br.aluraStickers.http.ClientHttp;
 import com.br.aluraStickers.model.imdb.ModelIMDB;
 import com.br.aluraStickers.model.imdb.ModelIMDBList;
+import com.br.aluraStickers.model.lang.ModelLang;
 import com.br.aluraStickers.model.nasa.ModelNASA;
 import com.google.gson.Gson;
 
@@ -32,6 +33,14 @@ public interface Model {
         return gson.fromJson(json, ModelNASA[].class);
     }
 
+    static ModelLang[] getImagesLang(String url) {
+        var httpCliente = new ClientHttp();
+        String json = httpCliente.buscaDados(url);
+
+        Gson gson = new Gson();
+
+        return gson.fromJson(json, ModelLang[].class);
+    }
 
 
     String image();

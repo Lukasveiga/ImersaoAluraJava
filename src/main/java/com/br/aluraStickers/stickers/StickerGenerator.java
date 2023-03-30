@@ -2,6 +2,7 @@ package com.br.aluraStickers.stickers;
 
 import com.br.aluraStickers.model.Model;
 import com.br.aluraStickers.model.imdb.ModelIMDB;
+import com.br.aluraStickers.model.lang.ModelLang;
 import com.br.aluraStickers.model.nasa.ModelNASA;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,14 +24,14 @@ public class StickerGenerator {
         BufferedImage image = ImageIO.read(inputStream);
 
         int width = image.getWidth();
-        int height = (int) (image.getHeight() * 1.1);
+        int height = (int) (image.getHeight() * 1.15);
 
         BufferedImage newImage = new BufferedImage(width, height, BufferedImage.TRANSLUCENT);
 
         Graphics2D graphics = (Graphics2D) newImage.getGraphics();
         graphics.drawImage(image, 0, 0, null);
 
-        var font = new Font(Font.SANS_SERIF, Font.BOLD, (width / 20)); // --> Best proportion between figure width and font size of text;
+        var font = new Font(Font.SANS_SERIF, Font.BOLD, (width / 10)); // --> Best proportion between figure width and font size of text;
         graphics.setColor(Color.red);
         graphics.setFont(font);
 
@@ -80,6 +81,14 @@ public class StickerGenerator {
     public static void createStickerNASA(ModelNASA model) throws IOException {
 
         createSticker(model, model.title(), "nasa");
+
+    }
+
+    public static void createStickerLang(ModelLang model) throws IOException {
+
+        String text = model.title() + ": #" + model.ranking();
+
+        createSticker(model, text, "lang");
 
     }
 }
